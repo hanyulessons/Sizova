@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Китайский: спидран</title>
+<style>
+:root{--bg:#f4f5fb;--fg:#1b1f36;--card:#fff;--ac:#5b5bf0;--ok:#16a05a;--bad:#d84343;--mut:#5d6384;--bd:#d9dcee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#13162a;--fg:#eef0ff;--card:#1f2340;--ac:#8c8cff;--ok:#4cd08a;--bad:#ff7b7b;--mut:#a3a8cc;--bd:#343a63}}
+:root[data-theme=dark]{--bg:#13162a;--fg:#eef0ff;--card:#1f2340;--ac:#8c8cff;--ok:#4cd08a;--bad:#ff7b7b;--mut:#a3a8cc;--bd:#343a63}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 system-ui,-apple-system,"Segoe UI","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif}
+#top{padding:12px 16px 4px;max-width:640px;margin:auto}
+#lv{font-weight:700;color:var(--ac)}
+.pb{height:8px;background:var(--bd);border-radius:8px;margin-top:6px;overflow:hidden}
+.pb i{display:block;height:100%;width:0;background:var(--ac);transition:width .3s}
+main{max-width:640px;margin:auto;padding:8px 16px 40px}
+h1{font-size:1.4rem;margin:.4em 0}h3{margin:.2em 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.w{background:var(--card);color:var(--fg);border:2px solid var(--bd);border-radius:14px;padding:10px;font:inherit;text-align:center;cursor:pointer}
+.w.seen{border-color:var(--ok)}
+.em{font-size:2.4rem;line-height:1.2}.scene{font-size:3rem;text-align:center}
+.big{font-size:2.4rem;line-height:1.3}
+ruby{ruby-position:under;margin:0 .22em;font-size:1.9rem}
+rt{font-size:.8em;color:var(--mut)}
+.tile{background:var(--card);color:var(--fg);border:2px solid var(--ac);border-radius:12px;padding:4px 10px;font:inherit;font-size:1.5rem;cursor:pointer}
+.zone{display:flex;flex-wrap:wrap;gap:8px;min-height:68px;padding:8px;border:2px dashed var(--bd);border-radius:12px;margin:10px 0}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:12px;padding:12px 20px;font:inherit;font-weight:700;margin:10px 0;cursor:pointer}
+.btn:disabled{opacity:.4}
+.snd{background:none;border:0;font-size:1.3rem;cursor:pointer}
+input{font:inherit;font-size:1.2rem;padding:10px;border:2px solid var(--bd);border-radius:10px;background:var(--card);color:var(--fg);width:100%;box-sizing:border-box}
+.fb{border-radius:12px;padding:8px 12px;margin:8px 0;font-weight:600}
+.fb.g{background:color-mix(in srgb,var(--ok) 20%,transparent)}
+.fb.r{background:color-mix(in srgb,var(--bad) 20%,transparent)}
+.ru{font-size:1.2rem;font-weight:600}
+.tb{display:flex;justify-content:space-between;align-items:center;gap:8px}.mini{font:inherit;font-size:.85rem;padding:4px 8px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg)}body.np rt,body.np .py{display:none}.wr{display:flex;gap:12px;justify-content:center;margin:10px 0}.sq{position:relative;aspect-ratio:1;width:min(44vw,250px);border:2px solid var(--ac);border-radius:6px;display:flex;align-items:center;justify-content:center;background:linear-gradient(var(--bd),var(--bd)) center/100% 1px no-repeat,linear-gradient(var(--bd),var(--bd)) center/1px 100% no-repeat,var(--card)}.sq canvas{width:100%;height:100%;touch-action:none;display:block}.ch{font-size:min(30vw,160px);line-height:1}.cov .ch,.cov .hz{visibility:hidden}.cov #smp::after{content:'?';position:absolute;font-size:3rem;color:var(--mut)}.wi{text-align:center;font-size:1.1rem}.bl{filter:blur(8px);cursor:pointer}.bl.on{filter:none}
+.pd{min-height:2.2rem;font-size:1.8rem;text-align:center;border-bottom:2px solid var(--ac);margin:8px 0}.kr{display:flex;gap:4px;justify-content:center;margin:4px 0}.kk{flex:1;max-width:46px;height:46px;font:inherit;font-size:1.15rem;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer;padding:0}.kt{max-width:62px;background:color-mix(in srgb,var(--ac) 18%,var(--card))}#jump,.skip{display:none}body.adm #jump,body.adm .skip{display:inline-block}
+.mt{display:flex;gap:10px}.mt>div{flex:1;display:flex;flex-direction:column;gap:8px}.mb{width:100%;font-size:1.1rem}.sel{background:color-mix(in srgb,var(--ac) 25%,var(--card))}.ok{border-color:var(--ok);opacity:.55}.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 25%,var(--card))}
+.sw{display:inline-flex;align-items:center;gap:8px;margin:6px 0;cursor:pointer}.sw input{display:none}.sl{width:46px;height:26px;border-radius:13px;background:var(--bd);position:relative;transition:.2s}.sl::after{content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}.sw input:checked+.sl{background:var(--ac)}.sw input:checked+.sl::after{left:23px}body.nt .tr{visibility:hidden}body.nt .tq{filter:blur(8px);cursor:pointer}body.nt .tq.on{filter:none}#top .sw{margin:0 6px 0 0;font-size:.85rem}
+</style></head><body>
+<div id="top"><div class="tb"><span id="lv"></span><span><input id="adm" class="mini" type="password" name="adm-code" autocomplete="new-password" data-lpignore="true" data-1p-ignore placeholder="🔒" size="4"> <select id="jump" class="mini"></select> <label class="sw"><input type="checkbox" id="trt" checked><span class="sl"></span> Перевод</label><button id="pt" class="mini">Пиньинь: вкл</button></span></div><div class="pb"><i id="bar"></i></div></div>
+<main id="m"></main>
+<script>
+const $=s=>document.querySelector(s);
+const rb=(h,p)=>`<ruby>${h}<rt>${p}</rt></ruby>`;
+const sp=k=>k.map(x=>x[0]).join('');
+const say=t=>{try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.speak(u)}catch(e){}};
+const shuf=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+const T=(k,e='')=>k.map(x=>rb(x[0],x[1])).join('')+e;
+
+// ===== ДАННЫЕ УРОКА: заменить под страницу учебника (W, mk-фразы S, диалоги D, вопросы Q) =====
+const W=[["冬天","dōngtiān","зима","❄️"],["冷","lěng","холодный; холодно","🥶"],["上课","shàngkè","идти на урок; урок начинается","🔔"],["睡觉","shuìjiào","спать","😴"],["休息","xiūxi","отдыхать","🛋️"],["星期五","xīngqīwǔ","пятница","📅"],["晚上","wǎnshang","вечер; ночь","🌙"]];
+const EX=[["已经","yǐjīng"],["了","le"],["吗","ma"],["要","yào"],["可以","kěyǐ"],["一下","yíxià"],["天","tiān"],["九点一刻","jiǔdiǎn yíkè"],["十二点","shí’èrdiǎn"],["，",""]];
+const P=Object.fromEntries([...W,...EX].map(w=>[w[0],w[1]]));
+const DIS=["已经","要","可以","了","天","冷","冬天","晚上","星期五","休息","睡觉","上课"].map(h=>[h,P[h]]);
+const Z=s=>s.split(' ').map(h=>[h,P[h]]);
+const mk=(ru,s,e,em)=>({ru,k:Z(s),e,em});
+const S=[mk("Уже зима.","已经 冬天 了","。"),mk("Стало холодно.","天 冷 了","。"),mk("Уже пятница.","已经 星期五 了","。"),mk("Уже вечер.","已经 晚上 了","。"),mk("Скоро урок.","要 上课 了","。"),mk("Пора спать.","要 睡觉 了","。"),mk("Теперь можно немного отдохнуть.","可以 休息 一下 了","。")];
+
+const Q=[mk("Уже зима, холодно.","已经 冬天 了 ， 天 冷 了","。","❄️🌲⛄"),mk("Уже девять пятнадцать, скоро урок.","已经 九点一刻 了 ， 要 上课 了","。","🕘🏫"),mk("Уже двенадцать ночи, пора спать.","已经 晚上 十二点 了 ， 要 睡觉 了","。","🦉🕛"),mk("Уже пятница, можно немного отдохнуть.","已经 星期五 了 ， 可以 休息 一下 了","。","📅🛋️"),mk("Уже пятница, холодно.","已经 星期五 了 ， 天 冷 了","。","📅🥶"),mk("Уже вечер, пора спать.","已经 晚上 了 ， 要 睡觉 了","。","🌙😴")];
+const st={ok:0,tot:0};
+let KEYH=null;document.addEventListener('keydown',e=>KEYH&&KEYH(e));
+const M=h=>{KEYH=null;$('#m').innerHTML=h;scrollTo(0,0)};
+const lv=t=>{$('#lv').textContent=t;$('#bar').style.width='0'};
+const go=(h,b,f)=>{M(h+`<button class="btn" id="go">${b}</button>`);$('#go').onclick=f};
+function fb(ok,html,cb){$('#fb').innerHTML=`<div class="fb ${ok?'g':'r'}">${ok?'✅ Верно!':'❌ Правильно так:'}<div>${html}</div></div>`+(ok?'':'<button class="btn" id="nx">Дальше</button>');if(ok)setTimeout(()=>cb(true),900);else $('#nx').onclick=()=>cb(false)}
+function run(tasks,show,done){const q=tasks.map(t=>({t,m:0})),n=q.length;let f=0;
+ const nx=()=>{$('#bar').style.width=(100*f/n)+'%';if(!q.length)return done();const c=q[0];
+  let used=0;show(c.t,ok=>{if(used)return;used=1;if(ok){q.shift();f++;st.tot++;if(!c.m)st.ok++}else{c.m++;q.push(q.shift())}nx()});
+  const b=document.createElement('button');b.className='mini skip';b.textContent='⏭ пропустить';b.onclick=()=>{if(used)return;used=1;q.shift();f++;nx()};$('#m').append(b)};nx()}
+function tTypeOld(w,res){
+ M(`<div class="card"><div class="em">${w[3]}</div><div class="big">${w[0]}</div><p>${w[2]} <button class="snd" onclick="say('${w[0]}')">🔊</button></p><p>Напиши пиньинь латиницей, тоны не нужны:</p><input id="in" autocomplete="off" autocapitalize="off"><button class="btn" id="ck">Проверить</button><div id="fb"></div></div>`);
+ const n=s=>s.normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/gi,'').toLowerCase();
+ const i=$('#in');i.focus();say(w[0]);
+ const chk=()=>{if(i.disabled)return;i.disabled=true;$('#ck').disabled=true;fb(n(i.value)==n(w[1]),rb(w[0],w[1]),res)};
+ $('#ck').onclick=chk;i.onkeydown=e=>{if(e.key=='Enter')chk()}}
+function tBuild(t,res,opt={}){
+const dis=shuf(DIS.filter(w=>!t.k.some(x=>x[0]==w[0]))).slice(0,opt.n||1);
+ let pool=shuf([...t.k,...dis]).map(x=>({x})),ans=[],lock=0;
+ M(`${opt.pre||''}<p class="ru tq" onclick="this.classList.toggle('on')">${t.ru}</p><div id="an" class="zone"></div><div id="pl" class="zone"></div><button class="btn" id="ck">Проверить</button><div id="fb"></div>`);
+ const tile=(z,f)=>{const b=document.createElement('button');b.className='tile';b.innerHTML=rb(z.x[0],z.x[1]);b.onclick=()=>{if(!lock){say(z.x[0]);f()}};return b};
+ const draw=()=>{const a=$('#an'),p=$('#pl');a.innerHTML=p.innerHTML='';
+  ans.forEach(z=>a.append(tile(z,()=>{ans=ans.filter(y=>y!==z);pool.push(z);draw()})));
+  pool.forEach(z=>p.append(tile(z,()=>{pool=pool.filter(y=>y!==z);ans.push(z);draw()})))};
+ draw();
+ $('#ck').onclick=()=>{if(lock||!ans.length)return;lock=1;$('#ck').disabled=true;fb(sp(ans.map(z=>z.x))==sp(t.k),T(t.k,t.e),res)}}
+function s0(){lv('Старт');go(`<h1>🎮 Спидран по китайскому</h1><p>Несколько уровней и босс. В конце ты сам находишь пары «картинка — фраза» со страницы учебника.</p><div class="card">1 · Слова<br>2 · Пиньинь<br>3 · Сопоставление<br>4 · Пропись иероглифов<br>5 · Ключи грамматики<br>6 · Собери фразу<br>7 · Две части через запятую<br>8 · Страница учебника<br>9 · Печатаем иероглифы<br>👹 Босс: мини-контрольная</div><p>Ошибки не страшны: неверное задание вернётся в конец, пока не получится.</p><p>⏱ Всего около 45 минут. Вверху: ☰ переход к любому уровню и переключатель пиньиня.</p>`,'Начать',s1)}
+function s1(){lv('Уровень 1 · Слова');const seen=new Set();
+ M(`<p>Нажми на каждую карточку: услышишь слово.</p><div class="grid" id="gr">${W.map((w,i)=>`<button class="w" data-i="${i}"><div class="em">${w[3]}</div><div class="big">${rb(w[0],w[1])}</div><div class="tr">${w[2]}</div></button>`).join('')}</div><button class="btn" id="go" disabled>Дальше</button>`);
+ document.querySelectorAll('.w').forEach(b=>b.onclick=()=>{const w=W[b.dataset.i];say(w[0]);b.classList.add('seen');seen.add(w[0]);$('#bar').style.width=(100*seen.size/W.length)+'%';if(seen.size==W.length)$('#go').disabled=false});
+ if(document.body.classList.contains('adm'))$('#go').disabled=false;$('#go').onclick=s2}
+function s2(){lv('Уровень 2 · Пиньинь');run(shuf(W),tType,sM)}
+
+// ===== ЭТАП «ключи грамматики»: переписать под новую тему =====
+function s3(){lv('Уровень 3 · Ключи');
+ go(`<div class="card"><h3>1 · 要 … 了 — «скоро, вот-вот, пора»</h3><p>${T(Z('要 上课 了'),'。')} <span class="tr">Скоро урок.</span></p><p>${T(Z('要 睡觉 了'),'。')} <span class="tr">Пора спать.</span></p><p>Не путай: 已经 … 了 — «уже случилось», 要 … 了 — «вот-вот случится».</p></div>
+ <div class="card"><h3>2 · 天 冷 了 — «стало холодно»</h3><p>${T(Z('天 冷 了'),'。')}</p><p>了 в конце показывает: что-то изменилось.</p></div>
+ <div class="card"><h3>3 · 可以 … 一下 了 — «теперь можно немного …»</h3><p>${T(Z('可以 休息 一下 了'),'。')}</p><p class="tr">Теперь можно немного отдохнуть.</p></div>
+ <div class="card"><h3>4 · Две части через запятую</h3><p>${T(Z('已经 晚上 十二点 了 ， 要 睡觉 了'),'。')}</p><p class="tr">Уже двенадцать ночи, пора спать.</p><p>${T(Z('九点一刻'))} — <span class="tr">«9:15», 一刻 это «четверть часа».</span></p></div>`,'Понятно, собираем фразы',s4)}
+
+function s4(){lv('Уровень 4 · Собери фразу');run(shuf(S),(t,r)=>tBuild(t,r),s4b)}
+
+// ===== ЭТАП: расширенная конструкция; оставить только если тема это допускает =====
+function s4b(){lv('Уровень 4б · Две части');
+ go(`<div class="card"><h3>已经 … 了 ， 要 … 了</h3><p>Две части через запятую: «уже …, скоро …».</p><p>${T(Z('已经 星期五 了 ， 可以 休息 一下 了'),'。')}</p><p>Смотри на картинку и собери всю фразу. Ловушки: 已经 и 要 легко перепутать.</p></div>`,'Поехали',()=>run(shuf(Q),(t,r)=>tBuild(t,r,{pre:`<div class="scene">${t.em}</div>`}),sP))}
+function s6(){lv('Босс');go(`<h1>👹 Босс: мини-контрольная</h1><p>7 фраз. В каждой два лишних кусочка. Подсказок-картинок нет.</p>`,'В бой',()=>run([...shuf(S).slice(0,5),...shuf(Q).slice(0,2)],(t,r)=>tBuild(t,r,{n:2}),s7))}
+function s7(){lv('Финиш');$('#bar').style.width='100%';
+ M(`<h1>🏆 Готово!</h1><p>С первого раза: <b>${st.ok} из ${st.tot}</b>.</p><p>В следующий раз попробуем побить этот результат.</p><input id="nm" placeholder="Твоё имя"><button class="btn" id="cd">Получить код для учителя</button><div id="code" class="ru"></div><p>В классе: прочитай вслух четыре фразы со страницы учебника.</p>`);
+ $('#cd').onclick=()=>{$('#code').textContent=`${$('#nm').value||'Ученик'} · ${st.ok}/${st.tot} · ${new Date().toLocaleDateString('ru')}`}}
+
+// ===== ДАННЫЕ: иероглифы для прописи, по одному =====
+const C=[['冬','dōng','冬天'],['天','tiān','冬天'],['冷','lěng','冷'],['上','shàng','上课'],['课','kè','上课'],['休','xiū','休息'],['息','xī','休息'],['五','wǔ','星期五'],['星','xīng','星期五'],['晚','wǎn','晚上']];
+
+// ===== ЭТАП: страница учебника, перепечатанная (упражнения 1 и 2) =====
+function sP(){lv('Страница учебника');let sel=null,left=4;const bad=new Set();
+ const R=[['1','🕘','<div class="wi">9:15</div>','b'],['2','🌲⛄','','a'],['3','📅','<div class="wi">'+rb('星期五','xīngqīwǔ')+'</div>','d'],['4','🦉🕛','','c']];
+ const A={a:'已经 冬天 了 ， 天 冷 了',b:'已经 九点一刻 了 ， 要 上课 了',c:'已经 晚上 十二点 了 ， 要 睡觉 了',d:'已经 星期五 了 ， 可以 休息 一下 了'};
+ M(`<h1>Страница учебника</h1><p class="ru">3. Найди соответствие между картинками и описаниями, приведёнными справа.</p><div class="grid" id="ps">${R.map(r=>`<button class="tile mb" data-a="${r[3]}"><div class="scene">${r[1]}</div><div>${r[0]})</div>${r[2]}</button>`).join('')}</div><div id="pj">${Object.keys(A).map(k=>`<button class="tile mb" data-a="${k}" style="text-align:left;margin:6px 0">${k}) ${T(Z(A[k]),'。')}</button>`).join('')}</div><p>Нажми картинку, потом подходящую фразу. Когда всё найдено, прочитай каждую фразу вслух и переведи.</p><button class="btn" id="go" disabled>Дальше: печатаем иероглифы</button>`);
+ const fin=()=>{$('#go').disabled=false};if(document.body.classList.contains('adm'))fin();
+ $('#go').onclick=sT;
+ document.querySelectorAll('#ps .tile').forEach(b=>b.onclick=()=>{if(b.disabled)return;document.querySelectorAll('#ps .tile').forEach(x=>x.classList.remove('sel'));sel=b;b.classList.add('sel')});
+ document.querySelectorAll('#pj .tile').forEach(b=>b.onclick=()=>{if(b.disabled||!sel)return;const a=sel,k=b.dataset.a;
+  if(a.dataset.a===k){sel=null;[a,b].forEach(x=>{x.classList.remove('sel');x.classList.add('ok');x.disabled=true});say(A[k].replace(/ /g,'')+'。');st.tot++;if(!bad.has(k))st.ok++;left--;$('#bar').style.width=(100*(4-left)/4)+'%';if(!left)fin()}
+  else{bad.add(a.dataset.a);bad.add(k);sel=null;a.classList.add('no');b.classList.add('no');setTimeout(()=>{a.classList.remove('no','sel');b.classList.remove('no')},500)}});
+ const sk=document.createElement('button');sk.className='mini skip';sk.textContent='⏭ пропустить';sk.onclick=sT;$('#m').append(sk)}
+function sW(){lv('Письмо · Иероглифы');let i=0,dr=0;
+ M(`<div id=wrap><p>Слева образец, справа пиши пальцем или мышкой. 🔄 закрывает образец: пиши по памяти, потом открой и сверь. 🧽 очищает поле. Повторяй сколько нужно.</p><div class=wr><div class=sq id=smp></div><div class=sq><canvas id=cv></canvas></div></div><div class=wi id=wi></div><div style='text-align:center'><button class=btn id=fl>🔄 Закрыть образец</button> <button class=btn id=cl>🧽 Стереть</button></div><div style='text-align:center'><button class=btn id=pv>← Назад</button> <button class=btn id=nx>Дальше →</button></div></div>`);
+ const cv=$('#cv'),g=cv.getContext('2d');
+ const fit=()=>{const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;cv.width=r.width*d;cv.height=r.height*d;g.setTransform(d,0,0,d,0,0);g.lineWidth=7;g.lineCap=g.lineJoin='round';g.strokeStyle=getComputedStyle(document.body).color};
+ const clr=()=>{g.save();g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,cv.width,cv.height);g.restore()};
+ const pt=e=>{const r=cv.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]};
+ cv.onpointerdown=e=>{dr=1;cv.setPointerCapture(e.pointerId);const [x,y]=pt(e);g.beginPath();g.moveTo(x,y);g.lineTo(x+.1,y);g.stroke()};
+ cv.onpointermove=e=>{if(!dr)return;const [x,y]=pt(e);g.lineTo(x,y);g.stroke();g.beginPath();g.moveTo(x,y)};
+ cv.onpointerup=cv.onpointercancel=()=>{dr=0};
+ const show=()=>{const c=C[i],w=W.find(x=>x[0]==c[2]);$('#wrap').classList.remove('cov');$('#fl').textContent='🔄 Закрыть образец';$('#smp').innerHTML=`<span class=ch>${c[0]}</span>`;
+  $('#wi').innerHTML=`${i+1} / ${C.length} · <span class=py>${c[1]}</span> · слово <span class=hz>${rb(w[0],w[1])}</span> <span class=tr>${w[2]}</span>`;
+  $('#nx').textContent=i<C.length-1?'Дальше →':'К грамматике →';$('#bar').style.width=(100*(i+1)/C.length)+'%';clr()};
+ $('#fl').onclick=()=>{const c=$('#wrap').classList.toggle('cov');$('#fl').textContent=c?'🔄 Открыть образец':'🔄 Закрыть образец'};
+ $('#cl').onclick=clr;
+ $('#pv').onclick=()=>{if(i>0){i--;show()}};
+ $('#nx').onclick=()=>{if(i<C.length-1){i++;show()}else s3()};
+ fit();show()}
+const TM={a:'āáǎà',e:'ēéěè',o:'ōóǒò',i:'īíǐì',u:'ūúǔù',v:'ǖǘǚǜ'};
+function tonify(s,t){let k=-1;if(t>=1&&t<=4){k=s.search(/[ae]/);if(k<0&&s.includes('ou'))k=s.indexOf('o');if(k<0)for(let j=s.length-1;j>=0;j--)if(TM[s[j]]){k=j;break}}return(k<0?s:s.slice(0,k)+TM[s[k]][t-1]+s.slice(k+1)).replace(/v/g,'ü')}
+const pyR=b=>b.replace(/([a-z]+)([0-5]?)/g,(m,s,t)=>tonify(s,+t));
+const KB=['qwertyuiop','asdfghjkl','zxcvbnm'];
+function mkKB(box,onCh,onBack){let buf='';const tb=['ā','á','ǎ','à','·'];
+ box.innerHTML=KB.map(r=>`<div class=kr>${[...r].map(c=>`<button class=kk data-k=${c}>${c=='v'?'ü':c}</button>`).join('')}</div>`).join('')+`<div class=kr>${tb.map((x,i)=>`<button class="kk kt" data-k=${i+1}>${x}</button>`).join('')}<button class="kk kt" data-k="<">⌫</button></div>`;
+ const press=k=>{if(k=='<'){if(buf)buf=buf.slice(0,-1);else if(onBack)onBack()}else if(/\d/.test(k)){if(/[a-z]\d?$/.test(buf))buf=buf.replace(/\d$/,'')+k}else buf+=k;onCh(buf)};
+ box.onclick=e=>{const b=e.target.closest('.kk');if(b)press(b.dataset.k)};
+ return{press,get:()=>buf,set:v=>{buf=v;onCh(buf)}}}
+const keyH=(k,chk,sel)=>e=>{if(e.key=='Enter')chk();else if(e.key=='Backspace')k.press('<');else if(e.key==' '&&sel){e.preventDefault();sel()}else if(/^[a-z]$/.test(e.key)||/^[1-5]$/.test(e.key))k.press(e.key)};
+function tType(w,res){
+ M(`<div class="card"><div class="em">${w[3]}</div><div class="big">${w[0]}</div><p><span class="tr">${w[2]}</span> <button class="snd" onclick="say('${w[0]}')">🔊</button></p><p>Набери пиньинь: буквы, затем тон слога (ā á ǎ à). Слабый слог без тона (xi в 休息, shang в 晚上): кнопка ·.</p><div id="pd" class="pd">…</div><div id="kb"></div><button class="btn" id="ck">Проверить</button><div id="fb"></div></div>`);
+ say(w[0]);let done=0;
+ const k=mkKB($('#kb'),b=>{if(!done)$('#pd').textContent=pyR(b)||'…'});
+ const chk=()=>{if(done||!k.get())return;done=1;$('#ck').disabled=true;fb(pyR(k.get()).normalize('NFC')==w[1].normalize('NFC'),rb(w[0],w[1]),res)};
+ $('#ck').onclick=chk;KEYH=e=>{if(!done)keyH(k,chk)(e)}}
+
+// ===== ДАННЫЕ: словарь IME (ключ с цифрами тонов -> кандидаты) =====
+const K={'dong1':['冬','东'],'dong4':['动','冻','洞'],'tian1':['天','添'],'dong1tian1':['冬天'],'leng3':['冷'],'shang4':['上','尚'],'shang5':['上'],'ke4':['课','刻','客'],'shang4ke4':['上课'],'shui4':['睡','税'],'jiao4':['觉','叫','教'],'shui4jiao4':['睡觉'],'xiu1':['休','修','羞'],'xi1':['息','西','希','吸'],'xi5':['息'],'xiu1xi1':['休息'],'xiu1xi5':['休息'],'xing1':['星','兴','腥'],'qi1':['期','七','妻'],'wu3':['五','舞','午'],'xing1qi1wu3':['星期五'],'wan3':['晚','碗'],'wan3shang4':['晚上'],'wan3shang5':['晚上'],'yao4':['要','药'],'ke3':['可','渴'],'yi3':['已','以','椅'],'ke3yi3':['可以'],'yi1':['一','衣'],'yi2':['一'],'xia4':['下','夏','吓'],'yi1xia4':['一下'],'yi2xia4':['一下'],'jing1':['经','京','惊'],'yi3jing1':['已经'],'le5':['了'],'ma5':['吗']};
+const cands=b=>{if(!b)return[];const L=b.replace(/\d/g,''),ds=b.replace(/\D/g,''),r=[];for(const key in K){if(key.replace(/\d/g,'')==L&&key.replace(/\D/g,'').startsWith(ds))r.push(...K[key])}return r};
+function tIME(t,res){
+ M(`<p class="ru tq" onclick="this.classList.toggle('on')">${t.ru}</p><div id="out" class="pd"></div><div id="pd" class="pd" style="font-size:1.3rem"></div><div id="cd" class="zone"></div><div id="kb"></div><button class="btn" id="ck">Проверить</button><div id="fb"></div>`);
+ let out='',done=0;
+ const pick=c=>{if(done)return;out+=c;k.set('')};
+ const draw=b=>{if(done)return;$('#out').textContent=out||'…';$('#pd').textContent=pyR(b);const cd=$('#cd');cd.innerHTML='';cands(b).forEach(c=>{const x=document.createElement('button');x.className='tile';x.textContent=c;x.onclick=()=>pick(c);cd.append(x)})};
+ const k=mkKB($('#kb'),draw,()=>{out=out.slice(0,-1);draw(k.get())});
+ draw('');
+ const chk=()=>{if(done||!out)return;done=1;$('#ck').disabled=true;fb(out==t.h,t.ans,res)};
+ $('#ck').onclick=chk;KEYH=e=>{if(!done)keyH(k,chk,()=>{const c=cands(k.get())[0];if(c)pick(c)})(e)}}
+
+// ===== ЭТАП: печать иероглифов (слова и фразы урока) =====
+function sT(){lv('Печатаем иероглифы');go(`<h1>⌨️ Печатаем иероглифы</h1><p>Как на настоящей китайской клавиатуре: набираешь пиньинь с тонами, внизу выбираешь нужный иероглиф. Слово можно набрать целиком (dong1tian1) или по слогам. С физической клавиатуры: цифры 1-5 для тона, пробел выбирает первый вариант.</p>`,'Поехали',()=>run([...shuf(W.slice(0,7)).slice(0,5).map(w=>({ru:w[3]+' '+w[2],h:w[0],ans:rb(w[0],w[1])})),...shuf(S).slice(0,2).map(s=>({ru:s.ru,h:sp(s.k),ans:T(s.k,s.e)}))],tIME,s6))}
+function sM(){lv('Сопоставление');const rounds=[W.slice(0,4),W.slice(4)];let r=0;
+ const round=()=>{const ws=rounds[r];let sel=null,left=ws.length;const bad=new Set();
+  M(`<p>Нажми иероглиф, потом его значение.</p><div class=mt><div id=ml></div><div id=mr></div></div>`);$('#bar').style.width=(100*r/rounds.length)+'%';
+  const pick=(b,w,side)=>{if(side=='l')say(w[0]);if(sel&&sel.side==side)sel.b.classList.remove('sel');
+   if(!sel||sel.side==side){sel={b,w,side};b.classList.add('sel');return}
+   const a=sel.b,v=sel.w;sel=null;a.classList.remove('sel');
+   if(v===w){[a,b].forEach(x=>{x.classList.add('ok');x.disabled=true});st.tot++;if(!bad.has(w[0]))st.ok++;if(!--left)setTimeout(()=>{r++;r<rounds.length?round():sW()},700)}
+   else{bad.add(w[0]);bad.add(v[0]);a.classList.add('no');b.classList.add('no');setTimeout(()=>{a.classList.remove('no');b.classList.remove('no')},500)}};
+  [['#ml','l'],['#mr','r']].forEach(([id,side])=>shuf(ws).forEach(w=>{const b=document.createElement('button');b.className='tile mb';b.innerHTML=side=='l'?rb(w[0],w[1]):`${w[3]} ${w[2]}`;b.onclick=()=>pick(b,w,side);$(id).append(b)}));
+  const sk=document.createElement('button');sk.className='mini skip';sk.textContent='⏭ пропустить';sk.onclick=sW;$('#m').append(sk)};
+ round()}
+
+// ===== НАВИГАЦИЯ: порядок этапов для меню админа =====
+const ST=[['Слова',s1],['Пиньинь',s2],['Сопоставление',sM],['Письмо',sW],['Ключи грамматики',s3],['Фразы',s4],['Две части',s4b],['Страница',sP],['Печать',sT],['Босс',s6],['Финиш',s7]];
+const jp=$('#jump');jp.innerHTML='<option>☰ Перейти</option>'+ST.map((s,i)=>`<option value="${i}">${s[0]}</option>`).join('');
+jp.onchange=()=>{const f=ST[jp.value];jp.selectedIndex=0;if(f)f[1]()};
+$('#trt').onchange=e=>document.body.classList.toggle('nt',!e.target.checked);
+$('#pt').onclick=()=>{const n=document.body.classList.toggle('np');$('#pt').textContent=n?'Пиньинь: выкл':'Пиньинь: вкл'};
+
+// ПАРОЛЬ АДМИНА: заменить на свой
+$('#adm').oninput=e=>{if(e.target.value==='15317'){document.body.classList.add('adm');e.target.style.display='none';const g=$('#go');if(g)g.disabled=false}};
+s0();
+</script></body></html>
