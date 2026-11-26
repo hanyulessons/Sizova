@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Диктант-штурм · стр. 43</title>
+<style>
+:root{--bg:#f4f5fb;--fg:#1b1f36;--card:#fff;--ac:#5b5bf0;--ok:#16a05a;--bad:#d84343;--mut:#5d6384;--bd:#d9dcee;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#13162a;--fg:#eef0ff;--card:#1f2340;--ac:#8c8cff;--ok:#4cd08a;--bad:#ff7b7b;--mut:#a3a8cc;--bd:#343a63}}
+:root[data-theme=dark]{--bg:#13162a;--fg:#eef0ff;--card:#1f2340;--ac:#8c8cff;--ok:#4cd08a;--bad:#ff7b7b;--mut:#a3a8cc;--bd:#343a63}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.5 system-ui,-apple-system,"Segoe UI","PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif}
+#top{padding:12px 16px 4px;max-width:640px;margin:auto}
+#lv{font-weight:700;color:var(--ac)}
+.pb{height:8px;background:var(--bd);border-radius:8px;margin-top:6px;overflow:hidden}
+.pb i{display:block;height:100%;width:0;background:var(--ac);transition:width .3s}
+main{max-width:640px;margin:auto;padding:8px 16px 40px}
+h1{font-size:1.4rem;margin:.4em 0}h3{margin:.2em 0}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:12px 14px;margin:10px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.w{background:var(--card);color:var(--fg);border:2px solid var(--bd);border-radius:14px;padding:10px;font:inherit;text-align:center;cursor:pointer}
+.w.seen{border-color:var(--ok)}
+.em{font-size:2.4rem;line-height:1.2}.scene{font-size:3rem;text-align:center}
+.big{font-size:2.4rem;line-height:1.3}
+ruby{ruby-position:under;margin:0 .22em;font-size:1.9rem}
+rt{font-size:.8em;color:var(--mut)}
+.tile{background:var(--card);color:var(--fg);border:2px solid var(--ac);border-radius:12px;padding:4px 10px;font:inherit;font-size:1.5rem;cursor:pointer}
+.zone{display:flex;flex-wrap:wrap;gap:8px;min-height:68px;padding:8px;border:2px dashed var(--bd);border-radius:12px;margin:10px 0}
+.btn{background:var(--ac);color:#fff;border:0;border-radius:12px;padding:12px 20px;font:inherit;font-weight:700;margin:10px 0;cursor:pointer}
+.btn:disabled{opacity:.4}
+.snd{background:none;border:0;font-size:1.3rem;cursor:pointer}
+input{font:inherit;font-size:1.2rem;padding:10px;border:2px solid var(--bd);border-radius:10px;background:var(--card);color:var(--fg);width:100%;box-sizing:border-box}
+.fb{border-radius:12px;padding:8px 12px;margin:8px 0;font-weight:600}
+.fb.g{background:color-mix(in srgb,var(--ok) 20%,transparent)}
+.fb.r{background:color-mix(in srgb,var(--bad) 20%,transparent)}
+.ru{font-size:1.2rem;font-weight:600}
+.tb{display:flex;justify-content:space-between;align-items:center;gap:8px}.mini{font:inherit;font-size:.85rem;padding:4px 8px;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg)}body.np rt,body.np .py{display:none}.wr{display:flex;gap:12px;justify-content:center;margin:10px 0}.sq{position:relative;aspect-ratio:1;width:min(44vw,250px);border:2px solid var(--ac);border-radius:6px;display:flex;align-items:center;justify-content:center;background:linear-gradient(var(--bd),var(--bd)) center/100% 1px no-repeat,linear-gradient(var(--bd),var(--bd)) center/1px 100% no-repeat,var(--card)}.sq canvas{width:100%;height:100%;touch-action:none;display:block}.ch{font-size:min(30vw,160px);line-height:1}.cov .ch,.cov .hz{visibility:hidden}.cov #smp::after{content:'?';position:absolute;font-size:3rem;color:var(--mut)}.wi{text-align:center;font-size:1.1rem}.bl{filter:blur(8px);cursor:pointer}.bl.on{filter:none}
+.pd{min-height:2.2rem;font-size:1.8rem;text-align:center;border-bottom:2px solid var(--ac);margin:8px 0}.kr{display:flex;gap:4px;justify-content:center;margin:4px 0}.kk{flex:1;max-width:46px;height:46px;font:inherit;font-size:1.15rem;border:1px solid var(--bd);border-radius:8px;background:var(--card);color:var(--fg);cursor:pointer;padding:0}.kt{max-width:62px;background:color-mix(in srgb,var(--ac) 18%,var(--card))}#jump,.skip{display:none}body.adm #jump,body.adm .skip{display:inline-block}
+.mt{display:flex;gap:10px}.mt>div{flex:1;display:flex;flex-direction:column;gap:8px}.mb{width:100%;font-size:1.1rem}.sel{background:color-mix(in srgb,var(--ac) 25%,var(--card))}.ok{border-color:var(--ok);opacity:.55}.no{border-color:var(--bad);background:color-mix(in srgb,var(--bad) 25%,var(--card))}
+.sw{display:inline-flex;align-items:center;gap:8px;margin:6px 0;cursor:pointer}.sw input{display:none}.sl{width:46px;height:26px;border-radius:13px;background:var(--bd);position:relative;transition:.2s}.sl::after{content:'';position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}.sw input:checked+.sl{background:var(--ac)}.sw input:checked+.sl::after{left:23px}body.nt .tr{visibility:hidden}body.nt .tq{filter:blur(8px);cursor:pointer}body.nt .tq.on{filter:none}#top .sw{margin:0 6px 0 0;font-size:.85rem}
+.mn{display:block;width:100%;text-align:left;margin:8px 0}.mn b{font-size:1.15rem}small{font-size:.8em}
+</style></head><body>
+<div id="top"><div class="tb"><span id="lv"></span><span><input id="adm" class="mini" type="password" name="adm-code" autocomplete="new-password" data-lpignore="true" data-1p-ignore placeholder="🔒" size="4"> <select id="jump" class="mini"></select> <label class="sw"><input type="checkbox" id="trt" checked><span class="sl"></span> Перевод</label><button id="pt" class="mini">Пиньинь: вкл</button></span></div><div class="pb"><i id="bar"></i></div></div>
+<main id="m"></main>
+<script>
+const $=s=>document.querySelector(s);
+const rb=(h,p)=>`<ruby>${h}<rt>${p}</rt></ruby>`;
+const sp=k=>k.map(x=>x[0]).join('');
+const say=t=>{try{speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(t);u.lang='zh-CN';u.rate=.8;speechSynthesis.speak(u)}catch(e){}};
+const shuf=a=>a.map(x=>[Math.random(),x]).sort((p,q)=>p[0]-q[0]).map(x=>x[1]);
+const T=(k,e='')=>k.map(x=>rb(x[0],x[1])).join('')+e;
+
+const st={ok:0,tot:0};
+let KEYH=null;document.addEventListener('keydown',e=>KEYH&&KEYH(e));
+const M=h=>{KEYH=null;$('#m').innerHTML=h;scrollTo(0,0)};
+const lv=t=>{$('#lv').textContent=t;$('#bar').style.width='0'};
+const go=(h,b,f)=>{M(h+`<button class="btn" id="go">${b}</button>`);$('#go').onclick=f};
+function fb(ok,html,cb){$('#fb').innerHTML=`<div class="fb ${ok?'g':'r'}">${ok?'✅ Верно!':'❌ Правильно так:'}<div>${html}</div></div>`+(ok?'':'<button class="btn" id="nx">Дальше</button>');if(ok)setTimeout(()=>cb(true),900);else $('#nx').onclick=()=>cb(false)}
+function run(tasks,show,done){const q=tasks.map(t=>({t,m:0})),n=q.length;let f=0;
+ const nx=()=>{$('#bar').style.width=(100*f/n)+'%';if(!q.length)return done();const c=q[0];
+  let used=0;show(c.t,ok=>{if(used)return;used=1;if(ok){q.shift();f++;st.tot++;if(!c.m)st.ok++}else{c.m++;q.push(q.shift())}nx()});
+  const b=document.createElement('button');b.className='mini skip';b.textContent='⏭ пропустить';b.onclick=()=>{if(used)return;used=1;q.shift();f++;nx()};$('#m').append(b)};nx()}
+function tBuild(t,res,opt={}){
+ const dis=shuf(DIS.filter(w=>!t.k.some(x=>x[0]==w[0]))).slice(0,opt.n||1);
+ let pool=shuf([...t.k,...dis]).map(x=>({x})),ans=[],lock=0;
+ M(`${opt.pre||''}<p class="ru tq" onclick="this.classList.toggle('on')">${t.ru}</p><div id="an" class="zone"></div><div id="pl" class="zone"></div><button class="btn" id="ck">Проверить</button><div id="fb"></div>`);
+ const tile=(z,f)=>{const b=document.createElement('button');b.className='tile';b.innerHTML=rb(z.x[0],z.x[1]);b.onclick=()=>{if(!lock){say(z.x[0]);f()}};return b};
+ const draw=()=>{const a=$('#an'),p=$('#pl');a.innerHTML=p.innerHTML='';
+  ans.forEach(z=>a.append(tile(z,()=>{ans=ans.filter(y=>y!==z);pool.push(z);draw()})));
+  pool.forEach(z=>p.append(tile(z,()=>{pool=pool.filter(y=>y!==z);ans.push(z);draw()})))};
+ draw();
+ $('#ck').onclick=()=>{if(lock||!ans.length)return;lock=1;$('#ck').disabled=true;fb(sp(ans.map(z=>z.x))==sp(t.k),T(t.k,t.e),res)}}
+const TM={a:'āáǎà',e:'ēéěè',o:'ōóǒò',i:'īíǐì',u:'ūúǔù',v:'ǖǘǚǜ'};
+function tonify(s,t){let k=-1;if(t>=1&&t<=4){k=s.search(/[ae]/);if(k<0&&s.includes('ou'))k=s.indexOf('o');if(k<0)for(let j=s.length-1;j>=0;j--)if(TM[s[j]]){k=j;break}}return(k<0?s:s.slice(0,k)+TM[s[k]][t-1]+s.slice(k+1)).replace(/v/g,'ü')}
+const pyR=b=>b.replace(/([a-z]+)([0-5]?)/g,(m,s,t)=>tonify(s,+t));
+const KB=['qwertyuiop','asdfghjkl','zxcvbnm'];
+function mkKB(box,onCh,onBack){let buf='';const tb=['ā','á','ǎ','à','·'];
+ box.innerHTML=KB.map(r=>`<div class=kr>${[...r].map(c=>`<button class=kk data-k=${c}>${c=='v'?'ü':c}</button>`).join('')}</div>`).join('')+`<div class=kr>${tb.map((x,i)=>`<button class="kk kt" data-k=${i+1}>${x}</button>`).join('')}<button class="kk kt" data-k="<">⌫</button></div>`;
+ const press=k=>{if(k=='<'){if(buf)buf=buf.slice(0,-1);else if(onBack)onBack()}else if(/\d/.test(k)){if(/[a-z]\d?$/.test(buf))buf=buf.replace(/\d$/,'')+k}else buf+=k;onCh(buf)};
+ box.onclick=e=>{const b=e.target.closest('.kk');if(b)press(b.dataset.k)};
+ return{press,get:()=>buf,set:v=>{buf=v;onCh(buf)}}}
+const keyH=(k,chk,sel)=>e=>{if(e.key=='Enter')chk();else if(e.key=='Backspace')k.press('<');else if(e.key==' '&&sel){e.preventDefault();sel()}else if(/^[a-z]$/.test(e.key)||/^[1-5]$/.test(e.key))k.press(e.key)};
+// ===== ДАННЫЕ УРОКА: страница 43, все 26 слов =====
+// W: [иероглифы, пиньинь (как в книге), перевод, эмодзи, (ситуация для прилагательных/частиц)]
+const W=[
+["打保龄球","dǎ bǎolíngqiú","играть в боулинг","🎳"],
+["玩帆板","wán fānbǎn","заниматься виндсёрфингом","🏄"],
+["打橄榄球","dǎ gǎnlǎnqiú","играть в регби","🏉"],
+["跳水比赛","tiàoshuǐ bǐsài","соревнования по прыжкам в воду","🏊"],
+["健美比赛","jiànměi bǐsài","соревнования по бодибилдингу","💪"],
+["体操比赛","tǐcāo bǐsài","соревнования по гимнастике","🤸"],
+["输","shū","проигрывать, терпеть неудачу","😞","Команда проиграла 0:3"],
+["凉","liáng","прохладный, свежий","🌬️","На улице прохладно и свежо"],
+["有趣","yǒuqù","любопытный, занятный, забавный","🎪","Забавная, занятная история"],
+["生气","shēngqì","сердиться, злиться","😡","Тебя отругали, и ты злишься"],
+["偏好","piānhào","предпочитать; предпочтение, любимое занятие","💖","Из всех занятий ты выбираешь одно любимое"],
+["民族","mínzú","народ, народный","🎎"],
+["摇滚","yáogǔn","рок, рок-н-ролл","🎸","В учебнике 摇滚(乐): 乐 можно не писать"],
+["古典","gǔdiǎn","классика, классический, древний","🎻"],
+["歌星","gēxīng","популярный певец (певица)","🎤"],
+["啦","la","модальная частица","🎉","Частица в конце фразы, лёгкая, без тона"],
+["风景","fēngjǐng","пейзаж, ландшафт","🏞️"],
+["部","bù","часть; счётное слово для кинофильмов, многотомных сочинений","🎬","Счётное слово: стоит перед названием фильма"],
+["恐怖","kǒngbù","страшный, ужасный","😱","Страшный фильм поздно ночью"],
+["精彩","jīngcǎi","блестящий, яркий, впечатляющий","🤩","Яркий, потрясающий концерт"],
+["业余","yèyú","(в) свободное время; любительский","🕔","Что ты делаешь после уроков, для себя"],
+["卡拉OK","kǎlāok","караоке (заимств. из японского языка), любительское пение под фонограмму","🎶"],
+["化","huà","изменяться, превращаться, таять (о снеге, льде)","☃️","Снег на солнце тает"],
+["沈阳","Shěnyáng","Шэньян","🏙️"],
+["千米","qiānmǐ","километр","🛣️"],
+["家具","jiājù","мебель","🛋️"]];
+const ALT={'摇滚':['摇滚乐']};
+
+// Партии: idx = номера слов (с 0), simple = иероглифы для прописи в классе
+const PARTS=[
+{id:'A',name:'Спорт',idx:[0,1,2,3,4,5],simple:'打球玩水比赛美体'},
+{id:'B',name:'Чувства и вкусы',idx:[6,7,8,9,10,11],simple:'有生气民好'},
+{id:'C',name:'Музыка и кино',idx:[12,13,14,15,16,17],simple:'古风星'},
+{id:'D',name:'Страх, блеск, караоке',idx:[18,19,20,21,22,23],simple:'业化余阳'},
+{id:'E',name:'Километры и мебель',idx:[24,25],simple:'千米家'}];
+
+// Иероглиф -> пиньинь с цифрой тона (5 = нейтральный)
+const CH={'打':'da3','保':'bao3','龄':'ling2','球':'qiu2','玩':'wan2','帆':'fan1','板':'ban3','橄':'gan3','榄':'lan3','跳':'tiao4','水':'shui3','比':'bi3','赛':'sai4','健':'jian4','美':'mei3','体':'ti3','操':'cao1','输':'shu1','凉':'liang2','有':'you3','趣':'qu4','生':'sheng1','气':'qi4','偏':'pian1','好':'hao4','民':'min2','族':'zu2','摇':'yao2','滚':'gun3','乐':'yue4','古':'gu3','典':'dian3','歌':'ge1','星':'xing1','啦':'la5','风':'feng1','景':'jing3','部':'bu4','恐':'kong3','怖':'bu4','精':'jing1','彩':'cai3','业':'ye4','余':'yu2','卡':'ka3','拉':'la1','OK':'ok','化':'hua4','沈':'shen3','阳':'yang2','千':'qian1','米':'mi3','家':'jia1','具':'ju4'};
+
+// Ловушки для клавиатуры (омофоны и близкие): [ключ, иероглифы]
+const TRAP=[['da4','大'],['bao3','宝饱'],['ling2','零铃'],['qiu2','求'],['wan2','完万'],['fan1','翻'],['ban3','版'],['gan3','感敢'],['lan3','懒览'],['tiao4','调'],['bi3','笔'],['sai4','塞'],['jian4','见建'],['mei3','每'],['ti3','提'],['cao1','糙'],['shu1','书叔'],['liang2','良粮'],['you3','友'],['qu4','去'],['sheng1','声'],['qi4','汽器'],['pian1','篇'],['hao3','好'],['hao4','号'],['min2','民'],['ming2','明'],['zu2','足'],['yao2','谣遥'],['gun3','滚'],['yue4','月越'],['gu3','谷骨'],['dian3','点'],['ge1','哥'],['xing1','腥'],['feng1','封峰'],['jing3','警'],['bu4','步'],['kong3','孔'],['jing1','经睛'],['cai3','采踩'],['ye4','夜页'],['yu2','鱼于'],['hua4','画话'],['shen3','审'],['yang2','羊洋'],['qian1','牵'],['jia1','加'],['ju4','句剧']];
+
+// Разбиение слов на части для «Собери слово»: номер слова -> части
+const SPLIT={0:'打 保龄球',1:'玩 帆板',2:'打 橄榄球',3:'跳水 比赛',4:'健美 比赛',5:'体操 比赛',8:'有 趣',9:'生 气',10:'偏 好',11:'民 族',12:'摇 滚',13:'古 典',14:'歌 星',16:'风 景',18:'恐 怖',19:'精 彩',20:'业 余',21:'卡 拉 OK',23:'沈 阳',24:'千 米',25:'家 具'};
+
+// ===== КЛЮЧИ СЛОВ по партиям (объяснение с учителем) =====
+const card=(h,body)=>`<div class="card"><h3>${h}</h3>${body}</div>`;
+const KEYS=[
+()=>card('1 · 打 и 玩: «играть, заниматься»',`<p>${T(Z('打 保龄球'))} ${T(Z('打 橄榄球'))}</p><p>${T(Z('玩 帆板'))}</p><p class="tr">Боулинг и регби: 打. Виндсёрфинг: 玩.</p>`)+
+card('2 · …比赛: «соревнования по …»',`<p>${T(Z('跳水 比赛'))}</p><p>${T(Z('健美 比赛'))}</p><p>${T(Z('体操 比赛'))}</p><p class="tr">Три слова, один хвост 比赛. Хвост запоминаем один раз.</p>`)+
+card('3 · Ловушка диктанта',`<p>${T(Z('保龄球'))} и ${T(Z('橄榄球'))}: оба кончаются на 球 qiú, середина разная.</p>`),
+()=>card('1 · 有趣 и 生气',`<p>${T(Z('有 趣'))}</p><p class="tr">有 «есть» + 趣 «интерес»: занятный.</p><p>${T(Z('生 气'))}</p><p class="tr">生 «рождать» + 气 «дух, воздух»: злость рождается, то есть сердиться.</p>`)+
+card('2 · 偏好 и 民族',`<p>${T(Z('偏 好'))}</p><p class="tr">偏 «в сторону» + 好 «любить»: предпочитать. Внимание: здесь 好 читается hào, 4-й тон!</p><p>${T(Z('民 族'))}</p><p class="tr">民 «люди» + 族 «род»: народ.</p>`)+
+card('3 · Слова из одного иероглифа',`<p>${T(Z('输'))} проиграть. ${T(Z('凉'))} прохладно.</p><p class="tr">Частей нет: запоминаем целиком. У 凉 слева две точки (лёд, прохлада).</p>`),
+()=>card('1 · 摇滚(乐)',`<p>${T(Z('摇 滚'))}</p><p class="tr">摇 «качать» + 滚 «катиться»: рок-н-ролл. 乐 yuè («музыка») в скобках: в диктанте можно писать и без него, и с ним.</p>`)+
+card('2 · 古典, 歌星, 风景',`<p>${T(Z('古 典'))}</p><p class="tr">古 «древний» + 典 «образец»: классика.</p><p>${T(Z('歌 星'))}</p><p class="tr">歌 «песня» + 星 «звезда»: звезда песни.</p><p>${T(Z('风 景'))}</p><p class="tr">风 «ветер» + 景 «вид»: пейзаж.</p>`)+
+card('3 · 啦 и 部',`<p>${T(Z('啦'))} частица в конце фразы, тона нет: la.</p><p>${T(Z('部'))} счётное слово: ставится перед названием фильма (…部 + фильм).</p>`),
+()=>card('1 · 恐怖 и 精彩',`<p>${T(Z('恐 怖'))}</p><p class="tr">恐 «бояться» + 怖 «ужас». У 怖 слева 忄 «сердце»: страх живёт в сердце.</p><p>${T(Z('精 彩'))}</p><p class="tr">精 «отборный» + 彩 «краски»: яркий, впечатляющий.</p>`)+
+card('2 · 业余 и 卡拉OK',`<p>${T(Z('业 余'))}</p><p class="tr">业 «дело, занятие» + 余 «остаток»: время, что осталось от дел.</p><p>${T(Z('卡 拉 OK'))}</p><p class="tr">卡拉 звучит как «кара», дальше латиницей OK. В диктанте OK набираем буквами o, k.</p>`)+
+card('3 · 化 и 沈阳',`<p>${T(Z('化'))}</p><p class="tr">Слева человек, справа человек вверх ногами: всё меняется.</p><p>${T(Z('沈 阳'))}</p><p class="tr">Название города. В пиньине с заглавной: Shěnyáng. 阳 «солнце».</p>`),
+()=>card('1 · 千米 и 家具',`<p>${T(Z('千 米'))}</p><p class="tr">千 «тысяча» + 米 «метр»: тысяча метров, километр.</p><p>${T(Z('家 具'))}</p><p class="tr">家 «дом» + 具 «принадлежности»: мебель.</p>`)];
+
+// ===== Производные данные =====
+const tok=s=>s.match(/OK|./g);
+const pyP=p=>pyR(tok(p).map(c=>CH[c]).join(''));
+const Z=s=>s.split(' ').map(h=>[h,pyP(h)]);
+const K={};const addK=(k,c)=>{(K[k]=K[k]||[]);if(!K[k].includes(c))K[k].push(c)};
+for(const c in CH)addK(CH[c],c);
+TRAP.forEach(([k,s])=>tok(s).forEach(c=>addK(k,c)));
+[...W.map(w=>w[0]),'摇滚乐'].forEach(h=>{const t=tok(h),n=t.map(c=>CH[c]);for(let i=0;i<t.length;i++)for(let j=i+2;j<=t.length;j++)addK(n.slice(i,j).join(''),t.slice(i,j).join(''))});
+const S=[];W.forEach((w,i)=>{if(SPLIT[i])S.push({i,ru:w[2],k:Z(SPLIT[i]),e:w[3]})});
+const DIS=[];S.forEach(t=>t.k.forEach(p=>{if(!DIS.some(d=>d[0]==p[0]))DIS.push(p)}));
+const ALLC=[];{const seen=new Set();W.forEach((w,i)=>tok(w[0]).forEach(c=>{if(c!='OK'&&!seen.has(c)){seen.add(c);ALLC.push([c,pyR(CH[c]),w[0],i])}}))}
+const charsOf=pi=>ALLC.filter(c=>PARTS[pi].simple.includes(c[0]));
+const SIMPLE=ALLC.filter(c=>PARTS.some(p=>p.simple.includes(c[0])));
+const wsOf=pi=>PARTS[pi].idx.map(i=>W[i]);
+const dictTask=w=>({ru:'🎧 Слушай и набери иероглифами',h:w[0],alt:ALT[w[0]]||[],ans:rb(w[0],w[1])});
+const typeTask=w=>({ru:w[3]+' '+w[2]+(w[4]?'<br><small class="tr">'+w[4]+'</small>':''),h:w[0],alt:ALT[w[0]]||[],ans:rb(w[0],w[1])});
+const chunk=(a,n)=>{const r=[];for(let i=0;i<a.length;i+=n)r.push(a.slice(i,i+n));if(r.length>1&&r[r.length-1].length<3){const l=r.pop();r[r.length-1].push(...l)}return r};
+const done=new Set();
+
+// ===== Набор текста =====
+function tType(w,res){
+ M(`<div class="card"><div class="em">${w[3]}</div><div class="big">${w[0]}</div><p><span class="tr">${w[2]}</span> <button class="snd" onclick="say('${w[0]}')">🔊</button></p>${w[4]?`<p class="tr">${w[4]}</p>`:''}<p>Набери пиньинь: буквы, затем тон слога (ā á ǎ à, · для лёгкого).</p><div id="pd" class="pd">…</div><div id="kb"></div><button class="btn" id="ck">Проверить</button><div id="fb"></div></div>`);
+ say(w[0]);let done=0;
+ const k=mkKB($('#kb'),b=>{if(!done)$('#pd').textContent=pyR(b)||'…'});
+ const chk=()=>{if(done||!k.get())return;done=1;$('#ck').disabled=true;fb(pyR(k.get()).normalize('NFC').toLowerCase()==w[1].replace(/ /g,'').normalize('NFC').toLowerCase(),rb(w[0],w[1]),res)};
+ $('#ck').onclick=chk;KEYH=e=>{if(!done)keyH(k,chk)(e)}}
+const cands=b=>{if(!b)return[];const L=b.replace(/\d/g,''),ds=b.replace(/\D/g,''),r=[];for(const key in K){if(key.replace(/\d/g,'')==L&&key.replace(/\D/g,'').startsWith(ds))r.push(...K[key])}return[...new Set(r)]};
+function tIME(t,res){
+ M(`<p class="ru tq" onclick="this.classList.toggle('on')">${t.ru}</p><div id="out" class="pd"></div><div id="pd" class="pd" style="font-size:1.3rem"></div><div id="cd" class="zone"></div><div id="kb"></div><button class="btn" id="ck">Проверить</button><div id="fb"></div>`);
+ let out='',done=0;
+ const pick=c=>{if(done)return;out+=c;k.set('')};
+ const draw=b=>{if(done)return;$('#out').textContent=out||'…';$('#pd').textContent=pyR(b);const cd=$('#cd');cd.innerHTML='';shuf(cands(b)).forEach(c=>{const x=document.createElement('button');x.className='tile';x.textContent=c;x.onclick=()=>pick(c);cd.append(x)})};
+ const k=mkKB($('#kb'),draw,()=>{out=out.slice(0,-1);draw(k.get())});
+ draw('');
+ const chk=()=>{if(done||!out)return;done=1;$('#ck').disabled=true;fb(out==t.h||(t.alt||[]).includes(out),t.ans,res)};
+ $('#ck').onclick=chk;KEYH=e=>{if(!done)keyH(k,chk,()=>{const c=cands(k.get())[0];if(c)pick(c)})(e)}}
+function tDict(t,res){tIME(t,res);say(t.h);$('#m').insertAdjacentHTML('afterbegin',`<button class="btn" onclick="say('${t.h}')">🔊 Ещё раз</button>`)}
+
+// ===== Этапы (каждый принимает слова и колбэк next) =====
+function cardsStage(ws,next,title){lv(title);const seen=new Set();
+ M(`<p>Нажми на каждую карточку: услышишь слово.</p><div class="grid" id="gr">${ws.map((w,i)=>`<button class="w" data-i="${i}"><div class="em">${w[3]}</div><div class="big">${rb(w[0],w[1])}</div><div class="tr">${w[2]}</div>${w[4]?`<div class="tr"><small>${w[4]}</small></div>`:''}</button>`).join('')}</div><button class="btn" id="go" disabled>Дальше</button>`);
+ document.querySelectorAll('.w').forEach(b=>b.onclick=()=>{const w=ws[b.dataset.i];say(w[0]);b.classList.add('seen');seen.add(w[0]);$('#bar').style.width=(100*seen.size/ws.length)+'%';if(seen.size==ws.length)$('#go').disabled=false});
+ if(document.body.classList.contains('adm'))$('#go').disabled=false;$('#go').onclick=next}
+const pinyinStage=(ws,next,title)=>{lv(title);run(shuf(ws),tType,next)};
+const keysStage=(pi,next,title)=>{lv(title);go(KEYS[pi](),'Понятно, дальше',next)};
+function buildStage(ws,next,title){lv(title);const hz=new Set(ws.map(w=>w[0]));const ts=S.filter(t=>hz.has(W[t.i][0]));if(!ts.length)return next();
+ run(shuf(ts),(t,r)=>tBuild(t,r),next)}
+function typeStage(ws,next,title){lv(title);go(`<h1>⌨️ Печатаем иероглифы</h1><p>Видишь значение, набираешь слово: пиньинь с тонами, внизу выбираешь иероглифы. Можно целиком (da3bao3ling2qiu2) или кусками (da3, bao3ling2qiu2). С физической клавиатуры: цифры 1-5 для тона, пробел выбирает первый вариант.</p>`,'Поехали',()=>run(shuf(ws).map(typeTask),tIME,next))}
+function dictStage(ws,next,title,intro){lv(title);go(`<h1>🎧 ${title}</h1><p>${intro||'Слушай слово и набери иероглифами. Без картинок и значений. Слушать можно сколько угодно раз.'}</p><p>Слов: <b>${ws.length}</b>.</p>`,'В бой',()=>run(shuf(ws).map(dictTask),tDict,next))}
+function matchStage(ws,next,title){lv(title);const rounds=chunk(shuf(ws),5);let r=0;
+ const round=()=>{const rw=rounds[r];let sel=null,left=rw.length;const bad=new Set();
+  M(`<p>Нажми иероглиф, потом его значение.</p><div class=mt><div id=ml></div><div id=mr></div></div>`);$('#bar').style.width=(100*r/rounds.length)+'%';
+  const pick=(b,w,side)=>{if(side=='l')say(w[0]);if(sel&&sel.side==side)sel.b.classList.remove('sel');
+   if(!sel||sel.side==side){sel={b,w,side};b.classList.add('sel');return}
+   const a=sel.b,v=sel.w;sel=null;a.classList.remove('sel');
+   if(v===w){[a,b].forEach(x=>{x.classList.add('ok');x.disabled=true});st.tot++;if(!bad.has(w[0]))st.ok++;if(!--left)setTimeout(()=>{r++;r<rounds.length?round():next()},700)}
+   else{bad.add(w[0]);bad.add(v[0]);a.classList.add('no');b.classList.add('no');setTimeout(()=>{a.classList.remove('no');b.classList.remove('no')},500)}};
+  [['#ml','l'],['#mr','r']].forEach(([id,side])=>shuf(rw).forEach(w=>{const b=document.createElement('button');b.className='tile mb';b.innerHTML=side=='l'?rb(w[0],w[1]):`${w[3]} ${w[2]}`;b.onclick=()=>pick(b,w,side);$(id).append(b)}));
+  const sk=document.createElement('button');sk.className='mini skip';sk.textContent='⏭ пропустить';sk.onclick=next;$('#m').append(sk)};
+ round()}
+function writeStage(chars,next,title){lv(title);let i=0,dr=0;if(!chars.length)return next();
+ M(`<div id=wrap><p>Слева образец, справа пиши пальцем или мышкой. 🔄 закрывает образец: пиши по памяти, потом открой и сверь. 🧽 очищает поле. Повторяй сколько нужно.</p><div class=wr><div class=sq id=smp></div><div class=sq><canvas id=cv></canvas></div></div><div class=wi id=wi></div><div style='text-align:center'><button class=btn id=fl>🔄 Закрыть образец</button> <button class=btn id=cl>🧽 Стереть</button></div><div style='text-align:center'><button class=btn id=pv>← Назад</button> <button class=btn id=nx>Дальше →</button></div></div>`);
+ const cv=$('#cv'),g=cv.getContext('2d');
+ const fit=()=>{const r=cv.getBoundingClientRect(),d=devicePixelRatio||1;cv.width=r.width*d;cv.height=r.height*d;g.setTransform(d,0,0,d,0,0);g.lineWidth=7;g.lineCap=g.lineJoin='round';g.strokeStyle=getComputedStyle(document.body).color};
+ const clr=()=>{g.save();g.setTransform(1,0,0,1,0,0);g.clearRect(0,0,cv.width,cv.height);g.restore()};
+ const pt=e=>{const r=cv.getBoundingClientRect();return [e.clientX-r.left,e.clientY-r.top]};
+ cv.onpointerdown=e=>{dr=1;cv.setPointerCapture(e.pointerId);const [x,y]=pt(e);g.beginPath();g.moveTo(x,y);g.lineTo(x+.1,y);g.stroke()};
+ cv.onpointermove=e=>{if(!dr)return;const [x,y]=pt(e);g.lineTo(x,y);g.stroke();g.beginPath();g.moveTo(x,y)};
+ cv.onpointerup=cv.onpointercancel=()=>{dr=0};
+ const show=()=>{const c=chars[i],w=W.find(x=>x[0]==c[2]);$('#wrap').classList.remove('cov');$('#fl').textContent='🔄 Закрыть образец';$('#smp').innerHTML=`<span class=ch>${c[0]}</span>`;
+  $('#wi').innerHTML=`${i+1} / ${chars.length} · <span class=py>${c[1]}</span> · слово <span class=hz>${rb(w[0],w[1])}</span> <span class=tr>${w[2]}</span>`;
+  $('#nx').textContent=i<chars.length-1?'Дальше →':'Готово →';$('#bar').style.width=(100*(i+1)/chars.length)+'%';clr()};
+ $('#fl').onclick=()=>{const c=$('#wrap').classList.toggle('cov');$('#fl').textContent=c?'🔄 Открыть образец':'🔄 Закрыть образец'};
+ $('#cl').onclick=clr;
+ $('#pv').onclick=()=>{if(i>0){i--;show()}};
+ $('#nx').onclick=()=>{if(i<chars.length-1){i++;show()}else next()};
+ fit();show()}
+
+// ===== Классный режим: партии =====
+function s0(){lv('Старт');M(`<h1>⚡ Диктант-штурм: 26 слов</h1><p>Страница 43, дополнительная лексика. Диктант будет по всем 26 словам, поэтому идём партиями.</p><div class="card">${PARTS.map((p,i)=>`<div><b>${p.id}</b> · ${p.name}: ${p.idx.map(j=>W[j][0]).join(' · ')}</div>`).join('')}</div><div class="card">В каждой партии: карточки → пиньинь → ключи слов → пропись простых иероглифов → мини-диктант.<br>👹 Босс: диктант по пройденным партиям.</div><p>Ошибки не страшны: неверное задание вернётся в конец, пока не получится. Что не успеем на занятии, доделаешь дома.</p><button class="btn" id="go">Начать партию A</button> <button class="btn" id="hm" style="background:var(--mut)">🏠 Домашка</button>`);
+ $('#go').onclick=()=>party(0);$('#hm').onclick=homeMenu}
+function party(pi){const P=PARTS[pi],ws=wsOf(pi),t=x=>`Партия ${P.id} · ${x}`;
+ cardsStage(ws,()=>pinyinStage(ws,()=>keysStage(pi,()=>writeStage(charsOf(pi),()=>dictStage(ws,()=>partyEnd(pi),t('Мини-диктант'),'Слушай слово и набери иероглифами. Слушать можно сколько угодно раз.'),t('Пропись')),t('Ключи слов')),t('Пиньинь')),t('Слова'))}
+function partyEnd(pi){lv('Партия '+PARTS[pi].id+' пройдена');done.add(pi);$('#bar').style.width='100%';const nx=pi+1<PARTS.length?pi+1:-1,n=[...done].reduce((a,i)=>a+PARTS[i].idx.length,0);
+ M(`<h1>✅ Партия ${PARTS[pi].id} пройдена</h1><p>С первого раза: <b>${st.ok} из ${st.tot}</b>. Пройдено партий: ${done.size} из ${PARTS.length}, слов: ${n} из 26.</p>${nx>=0?`<button class="btn" id="nx">Следующая партия: ${PARTS[nx].id} · ${PARTS[nx].name}</button>`:''}<button class="btn" id="bs" style="background:var(--bad)">👹 Босс: диктант по пройденным (${n})</button><button class="btn" id="hm" style="background:var(--mut)">🏠 Домашка</button>`);
+ if(nx>=0)$('#nx').onclick=()=>party(nx);$('#bs').onclick=boss;$('#hm').onclick=homeMenu}
+function boss(){const ws=[...done].sort().flatMap(wsOf);dictStage(ws.length?ws:W,()=>finish(),'Босс: диктант','Слушай слово и набери иероглифами. Без картинок и значений.')}
+function finish(){lv('Финиш');$('#bar').style.width='100%';
+ M(`<h1>🏆 Готово!</h1><p>С первого раза: <b>${st.ok} из ${st.tot}</b>.</p><p>Что не прошли на занятии, делай дома: кнопка «Домашка».</p><input id="nm" placeholder="Твоё имя"><button class="btn" id="cd">Получить код для учителя</button><div id="code" class="ru"></div><button class="btn" id="hm" style="background:var(--mut)">🏠 Домашка</button>`);
+ $('#cd').onclick=()=>{$('#code').textContent=`${$('#nm').value||'Ученик'} · ${st.ok}/${st.tot} · ${new Date().toLocaleDateString('ru')}`};$('#hm').onclick=homeMenu}
+
+// ===== Режим «Домашка»: все 26 слов, сам, без подсказок учителя =====
+const HS=new Set();
+const HOME=[
+['Карточки','все 26 слов со звуком',n=>cardsStage(W,n,'🏠 Карточки')],
+['Сопоставление','раунды по 5 слов',n=>matchStage(W,n,'🏠 Сопоставление')],
+['Пиньинь','набрать пиньинь с тонами',n=>pinyinStage(W,n,'🏠 Пиньинь')],
+['Ключи слов','прочитать, из чего слова состоят',n=>{let i=0;const nx=()=>i<KEYS.length?keysStage(i,()=>{i++;nx()},'🏠 Ключи слов · '+PARTS[i].id):n();nx()}],
+['Собери слово','собрать слова из частей',n=>buildStage(W,n,'🏠 Собери слово')],
+['Печать','значение → иероглифы',n=>typeStage(W,n,'🏠 Печать')],
+['Пропись: простые','около 20 иероглифов',n=>writeStage(SIMPLE,n,'🏠 Пропись · простые')],
+['Пропись: все','все иероглифы, по желанию',n=>writeStage(ALLC,n,'🏠 Пропись · все')],
+['👹 Босс: полный диктант','аудио, все 26 слов, как на диктанте',n=>dictStage(W,n,'🏠 Полный диктант')]];
+function homeMenu(){lv('🏠 Домашка');$('#bar').style.width=(100*HS.size/HOME.length)+'%';
+ M(`<h1>🏠 Домашка: 26 слов</h1><p>Делай по порядку, каждый этап можно повторять. Ошибки не страшны. В конце получи код для учителя.</p><div id="hl"></div><button class="btn" id="fn">🏁 Получить код для учителя</button>`);
+ HOME.forEach(([n,d,f])=>{const b=document.createElement('button');b.className='w mn'+(HS.has(n)?' seen':'');b.innerHTML=`<b>${HS.has(n)?'✅ ':''}${n}</b><div class="tr">${d}</div>`;b.onclick=()=>f(()=>{HS.add(n);homeMenu()});$('#hl').append(b)});
+ $('#fn').onclick=finish}
+
+// ===== НАВИГАЦИЯ: меню админа =====
+const ST=[['Старт',s0],...PARTS.map((p,i)=>['Партия '+p.id,()=>party(i)]),['Босс',boss],['Финиш',finish],['🏠 Домашка',homeMenu]];
+const jp=$('#jump');jp.innerHTML='<option>☰ Перейти</option>'+ST.map((s,i)=>`<option value="${i}">${s[0]}</option>`).join('');
+jp.onchange=()=>{const f=ST[jp.value];jp.selectedIndex=0;if(f)f[1]()};
+$('#trt').onchange=e=>document.body.classList.toggle('nt',!e.target.checked);
+$('#pt').onclick=()=>{const n=document.body.classList.toggle('np');$('#pt').textContent=n?'Пиньинь: выкл':'Пиньинь: вкл'};
+
+// ПАРОЛЬ АДМИНА: не менять без просьбы Lea
+$('#adm').oninput=e=>{if(e.target.value==='15317'){document.body.classList.add('adm');e.target.style.display='none';const g=$('#go');if(g)g.disabled=false}};
+addEventListener('hashchange',()=>{if(location.hash=='#home')homeMenu()});
+if(location.hash=='#home')homeMenu();else s0();
+
+</script></body></html>
